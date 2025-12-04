@@ -40,8 +40,8 @@ Basic Usage
 
 ```yaml
 steps:
-  - name: Wait for Netlify Deploy
-    uses: probablyup/wait-for-netlify-action@3.2.0
+  - name: Hold for Netlify
+    uses: magne4000/wait-for-netlify-action@v4
     id: waitForDeployment
     with:
       site_id: 'YOUR_SITE_ID' # See Settings > Site Details > General in the Netlify UI
