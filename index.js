@@ -1,6 +1,6 @@
-const core = require('@actions/core');
-const github = require('@actions/github');
-const axios = require('axios');
+import * as core from '@actions/core';
+import * as github from '@actions/github';
+import axios from 'axios';
 
 const READY_STATES = ['ready', 'current'];
 
@@ -113,7 +113,7 @@ const run = async () => {
     let message = `Waiting for Netlify to create a deployment for git SHA ${commitSha}`;
 
     if (context) {
-      message += ` and context ${context}`
+      message += ` and context ${context}`;
     }
 
     console.log(message);
